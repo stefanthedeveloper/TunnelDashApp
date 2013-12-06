@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3F8F5A81808F89E0025F3CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F8F5A71808F89E0025F3CD /* Foundation.framework */; };
+		D3F8F5AA1808F89E0025F3CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F8F5A91808F89E0025F3CD /* CoreGraphics.framework */; };
+		D3F8F5AC1808F89E0025F3CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F8F5AB1808F89E0025F3CD /* UIKit.framework */; };
+		D3F8F5B21808F89E0025F3CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5B01808F89E0025F3CD /* InfoPlist.strings */; };
+		D3F8F5B41808F89E0025F3CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F8F5B31808F89E0025F3CD /* main.m */; };
+		D3F8F5B81808F89E0025F3CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F8F5B71808F89E0025F3CD /* AppDelegate.m */; };
+		D3F8F5BB1808F89E0025F3CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5B91808F89E0025F3CD /* Main.storyboard */; };
+		D3F8F5BE1808F89E0025F3CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F8F5BD1808F89E0025F3CD /* ViewController.m */; };
+		D3F8F5C01808F89E0025F3CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5BF1808F89E0025F3CD /* Images.xcassets */; };
+		D3F8F5C71808F89E0025F3CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F8F5C61808F89E0025F3CD /* XCTest.framework */; };
+		D3F8F5C81808F89E0025F3CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F8F5A71808F89E0025F3CD /* Foundation.framework */; };
+		D3F8F5C91808F89E0025F3CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F8F5AB1808F89E0025F3CD /* UIKit.framework */; };
+		D3F8F5D11808F89E0025F3CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5CF1808F89E0025F3CD /* InfoPlist.strings */; };
+		D3F8F5D31808F89E0025F3CD /* Tunnel_DashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F8F5D21808F89E0025F3CD /* Tunnel_DashTests.m */; };
+		D3F8F5DE1808F8EC0025F3CD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5DC1808F8EC0025F3CD /* Default-568h@2x.png */; };
+		D3F8F5DF1808F8EC0025F3CD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5DD1808F8EC0025F3CD /* Default@2x.png */; };
+		D3F8F5EA1808F9030025F3CD /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5E01808F9030025F3CD /* AppIcon29x29.png */; };
+		D3F8F5EB1808F9030025F3CD /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5E11808F9030025F3CD /* AppIcon29x29@2x.png */; };
+		D3F8F5EC1808F9030025F3CD /* AppIcon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5E21808F9030025F3CD /* AppIcon40x40.png */; };
+		D3F8F5ED1808F9030025F3CD /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5E31808F9030025F3CD /* AppIcon40x40@2x.png */; };
+		D3F8F5EE1808F9030025F3CD /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5E41808F9030025F3CD /* AppIcon60x60.png */; };
+		D3F8F5EF1808F9030025F3CD /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5E51808F9030025F3CD /* AppIcon60x60@2x.png */; };
+		D3F8F5F01808F9030025F3CD /* AppIcon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5E61808F9030025F3CD /* AppIcon76x76.png */; };
+		D3F8F5F11808F9030025F3CD /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5E71808F9030025F3CD /* AppIcon76x76@2x.png */; };
+		D3F8F5F21808F9030025F3CD /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5E81808F9030025F3CD /* iTunesArtwork.png */; };
+		D3F8F5F31808F9030025F3CD /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5E91808F9030025F3CD /* iTunesArtwork@2x.png */; };
+		D3F8F6161808F9CE0025F3CD /* blue button.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5F41808F9CD0025F3CD /* blue button.png */; };
+		D3F8F6171808F9CE0025F3CD /* blue button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5F51808F9CD0025F3CD /* blue button@2x.png */; };
+		D3F8F6181808F9CE0025F3CD /* Blue Heli.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5F61808F9CD0025F3CD /* Blue Heli.png */; };
+		D3F8F6191808F9CE0025F3CD /* Blue Heli@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5F71808F9CD0025F3CD /* Blue Heli@2x.png */; };
+		D3F8F61A1808F9CE0025F3CD /* BOttom and top bar.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5F81808F9CD0025F3CD /* BOttom and top bar.png */; };
+		D3F8F61B1808F9CE0025F3CD /* BOttom and top bar green.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5F91808F9CD0025F3CD /* BOttom and top bar green.png */; };
+		D3F8F61C1808F9CE0025F3CD /* BOttom and top bar green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5FA1808F9CD0025F3CD /* BOttom and top bar green@2x.png */; };
+		D3F8F61D1808F9CE0025F3CD /* BOttom and top bar purple.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5FB1808F9CD0025F3CD /* BOttom and top bar purple.png */; };
+		D3F8F61E1808F9CE0025F3CD /* BOttom and top bar purple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5FC1808F9CD0025F3CD /* BOttom and top bar purple@2x.png */; };
+		D3F8F61F1808F9CE0025F3CD /* BOttom and top bar white.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5FD1808F9CD0025F3CD /* BOttom and top bar white.png */; };
+		D3F8F6201808F9CE0025F3CD /* BOttom and top bar white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5FE1808F9CD0025F3CD /* BOttom and top bar white@2x.png */; };
+		D3F8F6211808F9CE0025F3CD /* BOttom and top bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F5FF1808F9CD0025F3CD /* BOttom and top bar@2x.png */; };
+		D3F8F6221808F9CE0025F3CD /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6001808F9CD0025F3CD /* coin.png */; };
+		D3F8F6231808F9CE0025F3CD /* coin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6011808F9CD0025F3CD /* coin@2x.png */; };
+		D3F8F6241808F9CE0025F3CD /* green button.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6021808F9CD0025F3CD /* green button.png */; };
+		D3F8F6251808F9CE0025F3CD /* green button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6031808F9CD0025F3CD /* green button@2x.png */; };
+		D3F8F6261808F9CE0025F3CD /* Green Objects.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6041808F9CD0025F3CD /* Green Objects.png */; };
+		D3F8F6271808F9CE0025F3CD /* Green Objects@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6051808F9CD0025F3CD /* Green Objects@2x.png */; };
+		D3F8F6281808F9CE0025F3CD /* HeliDown.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6061808F9CD0025F3CD /* HeliDown.png */; };
+		D3F8F6291808F9CE0025F3CD /* HeliDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6071808F9CD0025F3CD /* HeliDown@2x.png */; };
+		D3F8F62A1808F9CE0025F3CD /* man2.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6081808F9CD0025F3CD /* man2.png */; };
+		D3F8F62B1808F9CE0025F3CD /* man2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6091808F9CD0025F3CD /* man2@2x.png */; };
+		D3F8F62C1808F9CE0025F3CD /* man3.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F60A1808F9CD0025F3CD /* man3.png */; };
+		D3F8F62D1808F9CE0025F3CD /* man3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F60B1808F9CD0025F3CD /* man3@2x.png */; };
+		D3F8F62E1808F9CE0025F3CD /* Objects.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F60C1808F9CD0025F3CD /* Objects.png */; };
+		D3F8F62F1808F9CE0025F3CD /* Objects@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F60D1808F9CD0025F3CD /* Objects@2x.png */; };
+		D3F8F6301808F9CE0025F3CD /* purple button.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F60E1808F9CD0025F3CD /* purple button.png */; };
+		D3F8F6311808F9CE0025F3CD /* purple button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F60F1808F9CD0025F3CD /* purple button@2x.png */; };
+		D3F8F6321808F9CE0025F3CD /* Purple objects.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6101808F9CD0025F3CD /* Purple objects.png */; };
+		D3F8F6331808F9CE0025F3CD /* Purple objects@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6111808F9CD0025F3CD /* Purple objects@2x.png */; };
+		D3F8F6341808F9CE0025F3CD /* red button.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6121808F9CD0025F3CD /* red button.png */; };
+		D3F8F6351808F9CE0025F3CD /* red button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6131808F9CD0025F3CD /* red button@2x.png */; };
+		D3F8F6361808F9CE0025F3CD /* White objects.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6141808F9CD0025F3CD /* White objects.png */; };
+		D3F8F6371808F9CE0025F3CD /* White objects@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6151808F9CE0025F3CD /* White objects@2x.png */; };
+		D3F8F63B1808F9E00025F3CD /* coin pick up sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6381808F9E00025F3CD /* coin pick up sound.mp3 */; };
+		D3F8F63C1808F9E00025F3CD /* hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6391808F9E00025F3CD /* hit.mp3 */; };
+		D3F8F63D1808F9E00025F3CD /* Stapling Paper-SoundBible.com-238116558.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F63A1808F9E00025F3CD /* Stapling Paper-SoundBible.com-238116558.mp3 */; };
+		D3F8F63F1808FA620025F3CD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F8F63E1808FA620025F3CD /* AudioToolbox.framework */; };
+		D3F8F6431808FB1D0025F3CD /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F8F6411808FB1D0025F3CD /* Settings.m */; };
+		D3F8F6441808FB1D0025F3CD /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F6421808FB1D0025F3CD /* Settings.xib */; };
+		D3F8F64D1808FB760025F3CD /* store.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F8F64B1808FB760025F3CD /* store.m */; };
+		D3F8F64E1808FB760025F3CD /* store.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F64C1808FB760025F3CD /* store.xib */; };
+		D3F8F650180903C20025F3CD /* Click2-Sebastian-759472264.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3F8F64F180903C20025F3CD /* Click2-Sebastian-759472264.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3F8F5CA1808F89E0025F3CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3F8F59C1808F89D0025F3CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3F8F5A31808F89E0025F3CD;
+			remoteInfo = "Tunnel Dash";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3F8F5A41808F89E0025F3CD /* Tunnel Dash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tunnel Dash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F8F5A71808F89E0025F3CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D3F8F5A91808F89E0025F3CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3F8F5AB1808F89E0025F3CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D3F8F5AF1808F89E0025F3CD /* Tunnel Dash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tunnel Dash-Info.plist"; sourceTree = "<group>"; };
+		D3F8F5B11808F89E0025F3CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3F8F5B31808F89E0025F3CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3F8F5B51808F89E0025F3CD /* Tunnel Dash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tunnel Dash-Prefix.pch"; sourceTree = "<group>"; };
+		D3F8F5B61808F89E0025F3CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D3F8F5B71808F89E0025F3CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D3F8F5BA1808F89E0025F3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3F8F5BC1808F89E0025F3CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D3F8F5BD1808F89E0025F3CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D3F8F5BF1808F89E0025F3CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D3F8F5C51808F89E0025F3CD /* Tunnel DashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tunnel DashTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F8F5C61808F89E0025F3CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D3F8F5CE1808F89E0025F3CD /* Tunnel DashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tunnel DashTests-Info.plist"; sourceTree = "<group>"; };
+		D3F8F5D01808F89E0025F3CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3F8F5D21808F89E0025F3CD /* Tunnel_DashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tunnel_DashTests.m; sourceTree = "<group>"; };
+		D3F8F5DC1808F8EC0025F3CD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D3F8F5DD1808F8EC0025F3CD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D3F8F5E01808F9030025F3CD /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
+		D3F8F5E11808F9030025F3CD /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
+		D3F8F5E21808F9030025F3CD /* AppIcon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon40x40.png; sourceTree = "<group>"; };
+		D3F8F5E31808F9030025F3CD /* AppIcon40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@2x.png"; sourceTree = "<group>"; };
+		D3F8F5E41808F9030025F3CD /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon60x60.png; sourceTree = "<group>"; };
+		D3F8F5E51808F9030025F3CD /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		D3F8F5E61808F9030025F3CD /* AppIcon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon76x76.png; sourceTree = "<group>"; };
+		D3F8F5E71808F9030025F3CD /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76@2x.png"; sourceTree = "<group>"; };
+		D3F8F5E81808F9030025F3CD /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		D3F8F5E91808F9030025F3CD /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		D3F8F5F41808F9CD0025F3CD /* blue button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue button.png"; sourceTree = "<group>"; };
+		D3F8F5F51808F9CD0025F3CD /* blue button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue button@2x.png"; sourceTree = "<group>"; };
+		D3F8F5F61808F9CD0025F3CD /* Blue Heli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Heli.png"; sourceTree = "<group>"; };
+		D3F8F5F71808F9CD0025F3CD /* Blue Heli@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Heli@2x.png"; sourceTree = "<group>"; };
+		D3F8F5F81808F9CD0025F3CD /* BOttom and top bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BOttom and top bar.png"; sourceTree = "<group>"; };
+		D3F8F5F91808F9CD0025F3CD /* BOttom and top bar green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BOttom and top bar green.png"; sourceTree = "<group>"; };
+		D3F8F5FA1808F9CD0025F3CD /* BOttom and top bar green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BOttom and top bar green@2x.png"; sourceTree = "<group>"; };
+		D3F8F5FB1808F9CD0025F3CD /* BOttom and top bar purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BOttom and top bar purple.png"; sourceTree = "<group>"; };
+		D3F8F5FC1808F9CD0025F3CD /* BOttom and top bar purple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BOttom and top bar purple@2x.png"; sourceTree = "<group>"; };
+		D3F8F5FD1808F9CD0025F3CD /* BOttom and top bar white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BOttom and top bar white.png"; sourceTree = "<group>"; };
+		D3F8F5FE1808F9CD0025F3CD /* BOttom and top bar white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BOttom and top bar white@2x.png"; sourceTree = "<group>"; };
+		D3F8F5FF1808F9CD0025F3CD /* BOttom and top bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BOttom and top bar@2x.png"; sourceTree = "<group>"; };
+		D3F8F6001808F9CD0025F3CD /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin.png; sourceTree = "<group>"; };
+		D3F8F6011808F9CD0025F3CD /* coin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coin@2x.png"; sourceTree = "<group>"; };
+		D3F8F6021808F9CD0025F3CD /* green button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green button.png"; sourceTree = "<group>"; };
+		D3F8F6031808F9CD0025F3CD /* green button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green button@2x.png"; sourceTree = "<group>"; };
+		D3F8F6041808F9CD0025F3CD /* Green Objects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green Objects.png"; sourceTree = "<group>"; };
+		D3F8F6051808F9CD0025F3CD /* Green Objects@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green Objects@2x.png"; sourceTree = "<group>"; };
+		D3F8F6061808F9CD0025F3CD /* HeliDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeliDown.png; sourceTree = "<group>"; };
+		D3F8F6071808F9CD0025F3CD /* HeliDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeliDown@2x.png"; sourceTree = "<group>"; };
+		D3F8F6081808F9CD0025F3CD /* man2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man2.png; sourceTree = "<group>"; };
+		D3F8F6091808F9CD0025F3CD /* man2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man2@2x.png"; sourceTree = "<group>"; };
+		D3F8F60A1808F9CD0025F3CD /* man3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man3.png; sourceTree = "<group>"; };
+		D3F8F60B1808F9CD0025F3CD /* man3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man3@2x.png"; sourceTree = "<group>"; };
+		D3F8F60C1808F9CD0025F3CD /* Objects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Objects.png; sourceTree = "<group>"; };
+		D3F8F60D1808F9CD0025F3CD /* Objects@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Objects@2x.png"; sourceTree = "<group>"; };
+		D3F8F60E1808F9CD0025F3CD /* purple button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purple button.png"; sourceTree = "<group>"; };
+		D3F8F60F1808F9CD0025F3CD /* purple button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purple button@2x.png"; sourceTree = "<group>"; };
+		D3F8F6101808F9CD0025F3CD /* Purple objects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple objects.png"; sourceTree = "<group>"; };
+		D3F8F6111808F9CD0025F3CD /* Purple objects@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple objects@2x.png"; sourceTree = "<group>"; };
+		D3F8F6121808F9CD0025F3CD /* red button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red button.png"; sourceTree = "<group>"; };
+		D3F8F6131808F9CD0025F3CD /* red button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red button@2x.png"; sourceTree = "<group>"; };
+		D3F8F6141808F9CD0025F3CD /* White objects.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White objects.png"; sourceTree = "<group>"; };
+		D3F8F6151808F9CE0025F3CD /* White objects@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "White objects@2x.png"; sourceTree = "<group>"; };
+		D3F8F6381808F9E00025F3CD /* coin pick up sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "coin pick up sound.mp3"; sourceTree = "<group>"; };
+		D3F8F6391808F9E00025F3CD /* hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit.mp3; sourceTree = "<group>"; };
+		D3F8F63A1808F9E00025F3CD /* Stapling Paper-SoundBible.com-238116558.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Stapling Paper-SoundBible.com-238116558.mp3"; sourceTree = "<group>"; };
+		D3F8F63E1808FA620025F3CD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D3F8F6401808FB1D0025F3CD /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		D3F8F6411808FB1D0025F3CD /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		D3F8F6421808FB1D0025F3CD /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
+		D3F8F64A1808FB760025F3CD /* store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = store.h; path = ../store.h; sourceTree = "<group>"; };
+		D3F8F64B1808FB760025F3CD /* store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = store.m; path = ../store.m; sourceTree = "<group>"; };
+		D3F8F64C1808FB760025F3CD /* store.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = store.xib; path = ../store.xib; sourceTree = "<group>"; };
+		D3F8F64F180903C20025F3CD /* Click2-Sebastian-759472264.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Click2-Sebastian-759472264.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3F8F5A11808F89E0025F3CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F8F63F1808FA620025F3CD /* AudioToolbox.framework in Frameworks */,
+				D3F8F5AA1808F89E0025F3CD /* CoreGraphics.framework in Frameworks */,
+				D3F8F5AC1808F89E0025F3CD /* UIKit.framework in Frameworks */,
+				D3F8F5A81808F89E0025F3CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3F8F5C21808F89E0025F3CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F8F5C71808F89E0025F3CD /* XCTest.framework in Frameworks */,
+				D3F8F5C91808F89E0025F3CD /* UIKit.framework in Frameworks */,
+				D3F8F5C81808F89E0025F3CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3F8F59B1808F89D0025F3CD = {
+			isa = PBXGroup;
+			children = (
+				D3F8F5AD1808F89E0025F3CD /* Tunnel Dash */,
+				D3F8F5CC1808F89E0025F3CD /* Tunnel DashTests */,
+				D3F8F5A61808F89E0025F3CD /* Frameworks */,
+				D3F8F5A51808F89E0025F3CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3F8F5A51808F89E0025F3CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3F8F5A41808F89E0025F3CD /* Tunnel Dash.app */,
+				D3F8F5C51808F89E0025F3CD /* Tunnel DashTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3F8F5A61808F89E0025F3CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3F8F63E1808FA620025F3CD /* AudioToolbox.framework */,
+				D3F8F5A71808F89E0025F3CD /* Foundation.framework */,
+				D3F8F5A91808F89E0025F3CD /* CoreGraphics.framework */,
+				D3F8F5AB1808F89E0025F3CD /* UIKit.framework */,
+				D3F8F5C61808F89E0025F3CD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3F8F5AD1808F89E0025F3CD /* Tunnel Dash */ = {
+			isa = PBXGroup;
+			children = (
+				D3F8F5B61808F89E0025F3CD /* AppDelegate.h */,
+				D3F8F5B71808F89E0025F3CD /* AppDelegate.m */,
+				D3F8F5B91808F89E0025F3CD /* Main.storyboard */,
+				D3F8F5BC1808F89E0025F3CD /* ViewController.h */,
+				D3F8F5BD1808F89E0025F3CD /* ViewController.m */,
+				D3F8F6401808FB1D0025F3CD /* Settings.h */,
+				D3F8F6411808FB1D0025F3CD /* Settings.m */,
+				D3F8F6421808FB1D0025F3CD /* Settings.xib */,
+				D3F8F64A1808FB760025F3CD /* store.h */,
+				D3F8F64B1808FB760025F3CD /* store.m */,
+				D3F8F64C1808FB760025F3CD /* store.xib */,
+				D3F8F5BF1808F89E0025F3CD /* Images.xcassets */,
+				D3F8F5AE1808F89E0025F3CD /* Supporting Files */,
+			);
+			path = "Tunnel Dash";
+			sourceTree = "<group>";
+		};
+		D3F8F5AE1808F89E0025F3CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3F8F6381808F9E00025F3CD /* coin pick up sound.mp3 */,
+				D3F8F6391808F9E00025F3CD /* hit.mp3 */,
+				D3F8F63A1808F9E00025F3CD /* Stapling Paper-SoundBible.com-238116558.mp3 */,
+				D3F8F64F180903C20025F3CD /* Click2-Sebastian-759472264.mp3 */,
+				D3F8F5F41808F9CD0025F3CD /* blue button.png */,
+				D3F8F5F51808F9CD0025F3CD /* blue button@2x.png */,
+				D3F8F5F61808F9CD0025F3CD /* Blue Heli.png */,
+				D3F8F5F71808F9CD0025F3CD /* Blue Heli@2x.png */,
+				D3F8F5F81808F9CD0025F3CD /* BOttom and top bar.png */,
+				D3F8F5F91808F9CD0025F3CD /* BOttom and top bar green.png */,
+				D3F8F5FA1808F9CD0025F3CD /* BOttom and top bar green@2x.png */,
+				D3F8F5FB1808F9CD0025F3CD /* BOttom and top bar purple.png */,
+				D3F8F5FC1808F9CD0025F3CD /* BOttom and top bar purple@2x.png */,
+				D3F8F5FD1808F9CD0025F3CD /* BOttom and top bar white.png */,
+				D3F8F5FE1808F9CD0025F3CD /* BOttom and top bar white@2x.png */,
+				D3F8F5FF1808F9CD0025F3CD /* BOttom and top bar@2x.png */,
+				D3F8F6001808F9CD0025F3CD /* coin.png */,
+				D3F8F6011808F9CD0025F3CD /* coin@2x.png */,
+				D3F8F6021808F9CD0025F3CD /* green button.png */,
+				D3F8F6031808F9CD0025F3CD /* green button@2x.png */,
+				D3F8F6041808F9CD0025F3CD /* Green Objects.png */,
+				D3F8F6051808F9CD0025F3CD /* Green Objects@2x.png */,
+				D3F8F6061808F9CD0025F3CD /* HeliDown.png */,
+				D3F8F6071808F9CD0025F3CD /* HeliDown@2x.png */,
+				D3F8F6081808F9CD0025F3CD /* man2.png */,
+				D3F8F6091808F9CD0025F3CD /* man2@2x.png */,
+				D3F8F60A1808F9CD0025F3CD /* man3.png */,
+				D3F8F60B1808F9CD0025F3CD /* man3@2x.png */,
+				D3F8F60C1808F9CD0025F3CD /* Objects.png */,
+				D3F8F60D1808F9CD0025F3CD /* Objects@2x.png */,
+				D3F8F60E1808F9CD0025F3CD /* purple button.png */,
+				D3F8F60F1808F9CD0025F3CD /* purple button@2x.png */,
+				D3F8F6101808F9CD0025F3CD /* Purple objects.png */,
+				D3F8F6111808F9CD0025F3CD /* Purple objects@2x.png */,
+				D3F8F6121808F9CD0025F3CD /* red button.png */,
+				D3F8F6131808F9CD0025F3CD /* red button@2x.png */,
+				D3F8F6141808F9CD0025F3CD /* White objects.png */,
+				D3F8F6151808F9CE0025F3CD /* White objects@2x.png */,
+				D3F8F5E01808F9030025F3CD /* AppIcon29x29.png */,
+				D3F8F5E11808F9030025F3CD /* AppIcon29x29@2x.png */,
+				D3F8F5E21808F9030025F3CD /* AppIcon40x40.png */,
+				D3F8F5E31808F9030025F3CD /* AppIcon40x40@2x.png */,
+				D3F8F5E41808F9030025F3CD /* AppIcon60x60.png */,
+				D3F8F5E51808F9030025F3CD /* AppIcon60x60@2x.png */,
+				D3F8F5E61808F9030025F3CD /* AppIcon76x76.png */,
+				D3F8F5E71808F9030025F3CD /* AppIcon76x76@2x.png */,
+				D3F8F5E81808F9030025F3CD /* iTunesArtwork.png */,
+				D3F8F5E91808F9030025F3CD /* iTunesArtwork@2x.png */,
+				D3F8F5DC1808F8EC0025F3CD /* Default-568h@2x.png */,
+				D3F8F5DD1808F8EC0025F3CD /* Default@2x.png */,
+				D3F8F5AF1808F89E0025F3CD /* Tunnel Dash-Info.plist */,
+				D3F8F5B01808F89E0025F3CD /* InfoPlist.strings */,
+				D3F8F5B31808F89E0025F3CD /* main.m */,
+				D3F8F5B51808F89E0025F3CD /* Tunnel Dash-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3F8F5CC1808F89E0025F3CD /* Tunnel DashTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3F8F5D21808F89E0025F3CD /* Tunnel_DashTests.m */,
+				D3F8F5CD1808F89E0025F3CD /* Supporting Files */,
+			);
+			path = "Tunnel DashTests";
+			sourceTree = "<group>";
+		};
+		D3F8F5CD1808F89E0025F3CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3F8F5CE1808F89E0025F3CD /* Tunnel DashTests-Info.plist */,
+				D3F8F5CF1808F89E0025F3CD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3F8F5A31808F89E0025F3CD /* Tunnel Dash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3F8F5D61808F89E0025F3CD /* Build configuration list for PBXNativeTarget "Tunnel Dash" */;
+			buildPhases = (
+				D3F8F5A01808F89E0025F3CD /* Sources */,
+				D3F8F5A11808F89E0025F3CD /* Frameworks */,
+				D3F8F5A21808F89E0025F3CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tunnel Dash";
+			productName = "Tunnel Dash";
+			productReference = D3F8F5A41808F89E0025F3CD /* Tunnel Dash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3F8F5C41808F89E0025F3CD /* Tunnel DashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3F8F5D91808F89E0025F3CD /* Build configuration list for PBXNativeTarget "Tunnel DashTests" */;
+			buildPhases = (
+				D3F8F5C11808F89E0025F3CD /* Sources */,
+				D3F8F5C21808F89E0025F3CD /* Frameworks */,
+				D3F8F5C31808F89E0025F3CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3F8F5CB1808F89E0025F3CD /* PBXTargetDependency */,
+			);
+			name = "Tunnel DashTests";
+			productName = "Tunnel DashTests";
+			productReference = D3F8F5C51808F89E0025F3CD /* Tunnel DashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3F8F59C1808F89D0025F3CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Stefan Studios";
+				TargetAttributes = {
+					D3F8F5A31808F89E0025F3CD = {
+						DevelopmentTeam = V8FVQ5687W;
+					};
+					D3F8F5C41808F89E0025F3CD = {
+						TestTargetID = D3F8F5A31808F89E0025F3CD;
+					};
+				};
+			};
+			buildConfigurationList = D3F8F59F1808F89D0025F3CD /* Build configuration list for PBXProject "Tunnel Dash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3F8F59B1808F89D0025F3CD;
+			productRefGroup = D3F8F5A51808F89E0025F3CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3F8F5A31808F89E0025F3CD /* Tunnel Dash */,
+				D3F8F5C41808F89E0025F3CD /* Tunnel DashTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3F8F5A21808F89E0025F3CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F8F6231808F9CE0025F3CD /* coin@2x.png in Resources */,
+				D3F8F6251808F9CE0025F3CD /* green button@2x.png in Resources */,
+				D3F8F5ED1808F9030025F3CD /* AppIcon40x40@2x.png in Resources */,
+				D3F8F61C1808F9CE0025F3CD /* BOttom and top bar green@2x.png in Resources */,
+				D3F8F61E1808F9CE0025F3CD /* BOttom and top bar purple@2x.png in Resources */,
+				D3F8F62B1808F9CE0025F3CD /* man2@2x.png in Resources */,
+				D3F8F63C1808F9E00025F3CD /* hit.mp3 in Resources */,
+				D3F8F62D1808F9CE0025F3CD /* man3@2x.png in Resources */,
+				D3F8F6191808F9CE0025F3CD /* Blue Heli@2x.png in Resources */,
+				D3F8F6171808F9CE0025F3CD /* blue button@2x.png in Resources */,
+				D3F8F6281808F9CE0025F3CD /* HeliDown.png in Resources */,
+				D3F8F5F31808F9030025F3CD /* iTunesArtwork@2x.png in Resources */,
+				D3F8F6211808F9CE0025F3CD /* BOttom and top bar@2x.png in Resources */,
+				D3F8F5C01808F89E0025F3CD /* Images.xcassets in Resources */,
+				D3F8F6311808F9CE0025F3CD /* purple button@2x.png in Resources */,
+				D3F8F6371808F9CE0025F3CD /* White objects@2x.png in Resources */,
+				D3F8F62C1808F9CE0025F3CD /* man3.png in Resources */,
+				D3F8F6181808F9CE0025F3CD /* Blue Heli.png in Resources */,
+				D3F8F5DE1808F8EC0025F3CD /* Default-568h@2x.png in Resources */,
+				D3F8F64E1808FB760025F3CD /* store.xib in Resources */,
+				D3F8F62F1808F9CE0025F3CD /* Objects@2x.png in Resources */,
+				D3F8F63D1808F9E00025F3CD /* Stapling Paper-SoundBible.com-238116558.mp3 in Resources */,
+				D3F8F5F01808F9030025F3CD /* AppIcon76x76.png in Resources */,
+				D3F8F6291808F9CE0025F3CD /* HeliDown@2x.png in Resources */,
+				D3F8F6241808F9CE0025F3CD /* green button.png in Resources */,
+				D3F8F5DF1808F8EC0025F3CD /* Default@2x.png in Resources */,
+				D3F8F6341808F9CE0025F3CD /* red button.png in Resources */,
+				D3F8F6161808F9CE0025F3CD /* blue button.png in Resources */,
+				D3F8F5EF1808F9030025F3CD /* AppIcon60x60@2x.png in Resources */,
+				D3F8F6441808FB1D0025F3CD /* Settings.xib in Resources */,
+				D3F8F6201808F9CE0025F3CD /* BOttom and top bar white@2x.png in Resources */,
+				D3F8F5EB1808F9030025F3CD /* AppIcon29x29@2x.png in Resources */,
+				D3F8F5B21808F89E0025F3CD /* InfoPlist.strings in Resources */,
+				D3F8F61F1808F9CE0025F3CD /* BOttom and top bar white.png in Resources */,
+				D3F8F5EC1808F9030025F3CD /* AppIcon40x40.png in Resources */,
+				D3F8F5BB1808F89E0025F3CD /* Main.storyboard in Resources */,
+				D3F8F63B1808F9E00025F3CD /* coin pick up sound.mp3 in Resources */,
+				D3F8F6361808F9CE0025F3CD /* White objects.png in Resources */,
+				D3F8F6221808F9CE0025F3CD /* coin.png in Resources */,
+				D3F8F6301808F9CE0025F3CD /* purple button.png in Resources */,
+				D3F8F5F21808F9030025F3CD /* iTunesArtwork.png in Resources */,
+				D3F8F61B1808F9CE0025F3CD /* BOttom and top bar green.png in Resources */,
+				D3F8F6351808F9CE0025F3CD /* red button@2x.png in Resources */,
+				D3F8F61D1808F9CE0025F3CD /* BOttom and top bar purple.png in Resources */,
+				D3F8F62E1808F9CE0025F3CD /* Objects.png in Resources */,
+				D3F8F62A1808F9CE0025F3CD /* man2.png in Resources */,
+				D3F8F6271808F9CE0025F3CD /* Green Objects@2x.png in Resources */,
+				D3F8F5F11808F9030025F3CD /* AppIcon76x76@2x.png in Resources */,
+				D3F8F61A1808F9CE0025F3CD /* BOttom and top bar.png in Resources */,
+				D3F8F6331808F9CE0025F3CD /* Purple objects@2x.png in Resources */,
+				D3F8F5EA1808F9030025F3CD /* AppIcon29x29.png in Resources */,
+				D3F8F5EE1808F9030025F3CD /* AppIcon60x60.png in Resources */,
+				D3F8F650180903C20025F3CD /* Click2-Sebastian-759472264.mp3 in Resources */,
+				D3F8F6261808F9CE0025F3CD /* Green Objects.png in Resources */,
+				D3F8F6321808F9CE0025F3CD /* Purple objects.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3F8F5C31808F89E0025F3CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F8F5D11808F89E0025F3CD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3F8F5A01808F89E0025F3CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F8F64D1808FB760025F3CD /* store.m in Sources */,
+				D3F8F5BE1808F89E0025F3CD /* ViewController.m in Sources */,
+				D3F8F5B81808F89E0025F3CD /* AppDelegate.m in Sources */,
+				D3F8F6431808FB1D0025F3CD /* Settings.m in Sources */,
+				D3F8F5B41808F89E0025F3CD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3F8F5C11808F89E0025F3CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F8F5D31808F89E0025F3CD /* Tunnel_DashTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3F8F5CB1808F89E0025F3CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3F8F5A31808F89E0025F3CD /* Tunnel Dash */;
+			targetProxy = D3F8F5CA1808F89E0025F3CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3F8F5B01808F89E0025F3CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3F8F5B11808F89E0025F3CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D3F8F5B91808F89E0025F3CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3F8F5BA1808F89E0025F3CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3F8F5CF1808F89E0025F3CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3F8F5D01808F89E0025F3CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3F8F5D41808F89E0025F3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D3F8F5D51808F89E0025F3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3F8F5D71808F89E0025F3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tunnel Dash/Tunnel Dash-Prefix.pch";
+				INFOPLIST_FILE = "Tunnel Dash/Tunnel Dash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D3F8F5D81808F89E0025F3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tunnel Dash/Tunnel Dash-Prefix.pch";
+				INFOPLIST_FILE = "Tunnel Dash/Tunnel Dash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D3F8F5DA1808F89E0025F3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tunnel Dash.app/Tunnel Dash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tunnel Dash/Tunnel Dash-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tunnel DashTests/Tunnel DashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D3F8F5DB1808F89E0025F3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tunnel Dash.app/Tunnel Dash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tunnel Dash/Tunnel Dash-Prefix.pch";
+				INFOPLIST_FILE = "Tunnel DashTests/Tunnel DashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3F8F59F1808F89D0025F3CD /* Build configuration list for PBXProject "Tunnel Dash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F8F5D41808F89E0025F3CD /* Debug */,
+				D3F8F5D51808F89E0025F3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3F8F5D61808F89E0025F3CD /* Build configuration list for PBXNativeTarget "Tunnel Dash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F8F5D71808F89E0025F3CD /* Debug */,
+				D3F8F5D81808F89E0025F3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3F8F5D91808F89E0025F3CD /* Build configuration list for PBXNativeTarget "Tunnel DashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F8F5DA1808F89E0025F3CD /* Debug */,
+				D3F8F5DB1808F89E0025F3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3F8F59C1808F89D0025F3CD /* Project object */;
+}
